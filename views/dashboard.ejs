@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: lightcyan; text-align: center;"> Welcome to Our Dashboard Page</h1>
+    <%  if(valid_name) {  %>
+        <h2 style="color: crimson; text-align: center;"> <%=valid_msg   %></h2>
+        <h2 style="color: crimson; text-align: center;">Welcome <%=valid_name   %></h2>
+    <%  }  %>
+
+    <form action="/logout" method="post">
+        <button>LogOut</button>
+    </form>
+</body>
+</html>
